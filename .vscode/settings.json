@@ -1,5 +1,7 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
   "files.insertFinalNewline": true,
-  "prettier.endOfLine": "auto"
+  "prettier.endOfLine": "lf",
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "on"
 }
