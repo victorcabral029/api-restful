@@ -9,9 +9,9 @@
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-	"prebuild": "npm run typeorm migration:run",
-	"build": "tsc src/shared/http/server.ts",
-	"start": "node build/shared/http/server.js"
+    "build": "tsc --project ./tsconfig.json",
+    "postpublish": "npm run typeorm migration:run",
+    "start": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_module src/shared/http/server.ts"
   },
   "repository": {
     "type": "git",

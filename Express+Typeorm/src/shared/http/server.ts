@@ -4,8 +4,8 @@ import 'express-async-errors';
 import cors from 'cors';
 import { errors } from 'celebrate';
 import routes from './routes';
-import AppError from '@shared/errors/AppError';
-import '@shared/typeorm';
+import AppError from '../../shared/errors/AppError';
+import '../typeorm';
 
 const app = express();
 
@@ -40,5 +40,5 @@ app.use(
 const port = process.env.PORT || 3333;
 
 app.listen(port, () => {
-	console.log('Server started on port port!');
+	console.log(`Server started on port ${port}!`);
 });
