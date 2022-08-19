@@ -30,6 +30,8 @@ app.use(
 			});
 		}
 
+		console.error(error.stack);
+
 		return response.status(500).json({
 			status: 'error',
 			message: 'Internal server error',
