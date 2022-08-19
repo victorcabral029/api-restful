@@ -1,46 +1,46 @@
 {
-  "name": "api-restful-vendas",
-  "version": "0.0.1",
-  "description": "API for data consumption on Cofrinho interfaces",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_module src/shared/http/server.ts",
-    "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint . --ext .ts --fix",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "build": "tsc --project ./tsconfig.json",
-    "postpublish": "npm run typeorm migration:run",
-    "start": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_module src/shared/http/server.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Amancio302/api-restful-vendas.git"
-  },
-  "author": "Matheus Amâncio Ferreira",
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "@types/cors": "^2.8.12",
-    "@types/express": "^4.17.13",
-    "@types/joi": "^17.2.3",
-    "@types/node": "^17.0.23",
-    "@typescript-eslint/eslint-plugin": "^5.18.0",
-    "@typescript-eslint/parser": "^5.18.0",
-    "eslint": "^8.12.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.2.0",
-    "prettier": "^2.6.2",
-},
-"dependencies": {
-	"tsconfig-paths": "^3.14.1",
-	"typescript": "^4.6.3",
-	"ts-node-dev": "^1.1.8",
-    "celebrate": "^15.0.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "express-async-errors": "^3.1.1",
-    "pg": "^8.7.3",
-    "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.45"
-  }
+	"name": "api-restful-vendas",
+	"version": "0.0.1",
+	"description": "API for data consumption on Cofrinho interfaces",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
+		"dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_module src/shared/http/server.ts",
+		"lint": "eslint . --ext .ts",
+		"lint-fix": "eslint . --ext .ts --fix",
+		"typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+		"build": "tsc --project ./tsconfig.json",
+		"postpublish": "npm run typeorm migration:run",
+		"start": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_module src/shared/http/server.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Amancio302/api-restful-vendas.git"
+	},
+	"author": "Matheus Amâncio Ferreira",
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@types/cors": "^2.8.12",
+		"@types/express": "^4.17.13",
+		"@types/joi": "^17.2.3",
+		"@types/node": "^17.0.23",
+		"@typescript-eslint/eslint-plugin": "^5.18.0",
+		"@typescript-eslint/parser": "^5.18.0",
+		"eslint": "^8.12.0",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-prettier": "^3.2.0",
+		"prettier": "^2.6.2"
+	},
+	"dependencies": {
+		"tsconfig-paths": "^3.14.1",
+		"typescript": "^4.6.3",
+		"ts-node-dev": "^1.1.8",
+		"celebrate": "^15.0.1",
+		"cors": "^2.8.5",
+		"express": "^4.17.3",
+		"express-async-errors": "^3.1.1",
+		"pg": "^8.7.3",
+		"reflect-metadata": "^0.1.13",
+		"typeorm": "^0.2.45"
+	}
 }
